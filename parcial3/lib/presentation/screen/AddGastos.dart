@@ -6,6 +6,8 @@ class Addgastos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final _formKey = GlobalKey<FormState>();
+    final TextEditingController _controller = TextEditingController();
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Add Gastos', style: TextStyle(color: Colors.white, fontSize: 40.0),),
@@ -16,7 +18,13 @@ class Addgastos extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Text("Add Gastos"),
-          Form(child: const Text("hola")),
+          Form(
+            child: Column(
+              key: _formKey,
+              mainAxisAlignment: MainAxisAlignment.center,
+              //padding
+            ),
+          ),
         ],
       )),
     );
