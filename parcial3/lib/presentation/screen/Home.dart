@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => Inicio(),
-        '/agregarGasto': (context) => Addgastos(),
+        '/agregarGastos': (context) => Addgastos(),
         '/reportes': (context) => Reportes(),
       },
     );
